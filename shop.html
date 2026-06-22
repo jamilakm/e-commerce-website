@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-white">
+    <div>
+        <div
+            class="mx-auto flex flex-col md:flex-row items-center justify-between mt-4 md:mt-8 pb-5 px-4 sm:px-8 md:px-16 shadow-md gap-4">
+            <div class="flex items-center justify-between w-full md:w-auto gap-4 md:gap-16">
+                <div class="heading2 font-semibold text-2xl sm:text-3xl text-amber-950 md:mr-28">
+                    Sneakify
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-amber-950 focus:outline-none cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <div class="hidden md:flex text-amber-950 gap-6 lg:gap-15 items-center">
+                    <a href="#" class="font-semibold">Home</a>
+                    <div class="relative group">
+                        <a href="#">Shop</a>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-60 z-50">
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Running Shoes</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Unisex</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Training Shoes</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Lifestyle Shoes</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">New Arrivals</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#">Brands</a>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-60 z-50">
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Nike</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Adidas</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Puma</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#">Men</a>
+                        <div
+                            class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md w-60 z-50">
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Running Shoes</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Training Shoes</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Lifestyle Shoes</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Best Sellers</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#">Women</a>
+                        <div
+                            class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md w-60 z-50">
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Running Shoes</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Training Shoes</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Lifestyle Shoes</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Best Sellers</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#">About</a>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-60 z-50">
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Shipping Information</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Return & Refund</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">FAQ</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <a href="#">Contact</a>
+                        <div
+                            class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md w-60 z-50">
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Contact Us</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Customer Support</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">Email Us</a>
+                            <a href="#" class="block px-4 py-2 hover:text-amber-900">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden w-full flex-col text-amber-950 gap-4 pb-4 border-b border-gray-100 md:hidden">
+                <a href="#" class="font-semibold py-1">Home</a>
+                <a href="#" class="py-1">Shop</a>
+                <a href="#" class="py-1">Brands</a>
+                <a href="#" class="py-1">Men</a>
+                <a href="#" class="py-1">Women</a>
+                <a href="#" class="py-1">About</a>
+                <a href="#" class="py-1">Contact</a>
+            </div>
+
+            <div class="flex items-center justify-between md:justify-end w-full md:w-auto gap-4">
+                <div
+                    class="relative flex items-center flex-1 md:flex-initial border border-gray-300 rounded-lg px-2 py-1 bg-gray-50 focus-within:ring-2 focus-within:ring-amber-950">
+                    <input type="text" id="search-input" placeholder="Search sneakers..."
+                        class="outline-none bg-transparent text-sm px-2 py-1 w-full md:w-40 md:focus:w-56 transition-all duration-300 text-stone-800">
+                    <button id="search-btn" class="hover:opacity-70 transition">
+                        <img class="w-6 h-6" src="images/magnifying-glass-solid-full.svg" alt="Search">
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <button><img class="w-10 h-6" src="images/user-regular-full.svg" alt="User"></button>
+
+                    <div class="relative">
+                        <button id="cartBtn" class="cursor-pointer">
+                            <img class="w-10 h-6" src="images/cart-arrow-down-solid-full.svg" alt="Cart">
+                        </button>
+                        <div id="cartNo"
+                            class="hidden absolute -top-2 -right-2 rounded-full bg-orange-500 text-white text-[10px] w-5 h-5 flex items-center justify-center font-bold">
+                            0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="mx-auto px-4 sm:px-8 py-12">
+            <div id="products" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-6">
+            </div>
+        </section>
+
+        <div id="shoe-modal" class="hidden fixed inset-0 justify-center items-center  p-4">
+            <div
+                class="bg-white p-6 sm:p-8 rounded-xl max-w-sm w-full relative shadow-2xl max-h-[90vh] overflow-y-auto">
+                <span
+                    class="close-btn absolute top-3 right-4 text-2xl font-bold cursor-pointer text-amber-950 hover:text-gray-700">&times;</span>
+                <img id="modal-img" src="" alt=""
+                    class="w-full h-auto rounded-lg mb-4 max-h-48 object-contain bg-gray-50">
+                <h2 id="modal-name" class="text-xl sm:text-2xl font-extrabold text-amber-950 mb-1"></h2>
+                <p id="modal-price" class="text-lg sm:text-xl font-semibold text-amber-950 mb-3"></p>
+                <p id="modal-desc" class="text-stone-800 text-sm mb-6 leading-relaxed"></p>
+
+                <div class="mb-6">
+                    <span class="text-sm font-semibold text-amber-950 block mb-2">Available Sizes (UK)</span>
+                    <div id="modal-sizes-container" class="flex flex-wrap gap-2">
+                    </div>
+                </div>
+                <button id="modal-add-to-cart-btn"
+                    class="w-full bg-amber-950 text-white py-3 rounded-lg font-medium hover:bg-amber-900 transition">Add
+                    to Cart</button>
+            </div>
+        </div>
+
+        <div id="cart-panel"
+            class="hidden fixed inset-y-0 right-0 w-full sm:w-80 bg-white shadow-2xl z-50 flex flex-col border-l border-gray-200">
+            <div class="p-4 border-b border-gray-200 flex justify-between items-center bg-amber-950 text-white">
+                <h3 class="text-xl font-semibold">Your Cart</h3>
+                <button id="close-cart-btn"
+                    class="text-2xl font-bold cursor-pointer hover:text-gray-300">&times;</button>
+            </div>
+            <div id="cart-items-list" class="flex-1 overflow-y-auto p-4 space-y-4">
+                <p id="empty-cart-msg" class="text-stone-500 text-center py-8">Your cart is empty.</p>
+            </div>
+            <div class="p-4 border-t border-gray-200 bg-gray-50">
+                <button
+                    class="w-full bg-amber-950 text-white py-3 rounded-lg font-medium hover:bg-amber-900 transition">Proceed
+                    to Checkout</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
